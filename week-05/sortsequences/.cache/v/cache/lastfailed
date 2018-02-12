@@ -1,1 +1,3 @@
-{}
+{
+  "tests/test_sort_strings.py::test_by_longest_length": true
+}

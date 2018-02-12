@@ -27,7 +27,7 @@ def by_longest_length():
     """
     def foo_len(item):
         return len(item)
-    return sorted(STRING_LIST, key=foo_len)
+    return sorted(STRING_LIST, key=foo_len, reverse=True)
 
 def filter_and_sort_number_strings():
     """
@@ -39,13 +39,10 @@ def filter_and_sort_number_strings():
     https://www.geeksforgeeks.org/python-string-isnumeric-application/
 
     """
+    newList = []
     for string in STRING_LIST:
-        if string.isnumeric(): continue
-        else: STRING_LIST.remove(string)
-    for string in STRING_LIST:
-        if string.isnumeric(): continue
-        else: STRING_LIST.remove(string)
-    return sorted(STRING_LIST)
+        if string.isnumeric(): newList.append(string)
+    return sorted(newList)
 
 
 def filter_and_sort_number_strings_as_numbers():
@@ -59,11 +56,11 @@ def filter_and_sort_number_strings_as_numbers():
     Hint: Use the int() or float() method to convert a numeric string
        into an actual number
     """
+    newList = []
     for string in STRING_LIST:
-        if string.isnumeric(): continue
-        else: STRING_LIST.remove(string)
+        if string.isnumeric(): newList.append(string)
     def my_foo(item):
         return int(item)
-    return sorted(STRING_LIST, key = my_foo)
+    return sorted(newList, key = my_foo)
 
 
