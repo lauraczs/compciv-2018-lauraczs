@@ -1,0 +1,7 @@
+{
+  "txdeathrow_check/tests/test_calc_years_diff.py": true,
+  "txdeathrow_check/tests/test_make_absolute_url.py": true,
+  "txdeathrow_check/tests/test_scraper.py": true,
+  "txdeathrow_check/tests/test_txdate_to_iso.py": true,
+  "txdeathrow_check/tests/test_wrangle_inmate_data.py": true
+}
