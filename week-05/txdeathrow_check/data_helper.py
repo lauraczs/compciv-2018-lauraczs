@@ -33,8 +33,6 @@ def fetch_data_from_web():
         # but let's just return the filename for the heck of it
         return DATA_FILEPATH
 
-
-
 def get_html():
     """
     Reads the file at DATA_FILEPATH and returns it as a string.
